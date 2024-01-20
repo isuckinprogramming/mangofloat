@@ -1,0 +1,21 @@
+a{
+    color: white;
+}
+main, aside, footer, nav{
+    border: solid black 2px;
+    margin: 20px;
+}
+article{
+    border: solid yellow 5px;
+    background-color: yellow;
+}
+aside {
+    background-color: pink;
+}
+footer {
+    background-color: grey;
+}
+nav{
+    color: white;
+    background-color: blue;
+}
