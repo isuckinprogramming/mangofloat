@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested List Activity</title>
+</head>
+<body>
+
+  <h1>Nested List Activity</h1>
+  <!--
+    Emmet snippet - Ctrl+space to preview 
+    View Emmet cheat sheet for reference  
+    ul>(li{Item 1}+li{Item 2}>ul>li{Inner sub Item $}*2+li{Inner sub Item 3}>ul>(li{Nested content $}*4)) -->
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2
+      <ul>
+        <li>Inner sub Item 1</li>
+        <li>Inner sub Item 2</li>
+        <li>Inner sub Item 3
+          <ul>
+            <li>Nested content 1</li>
+            <li>Nested content 2</li>
+            <li>Nested content 3</li>
+            <li>Nested content 4</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- 
+    Using ^ operator to move up a level in the nest
+    ul>li{Item 1}>ul>(li{Inner sub Item $}*2)+li{Inner sub Item 3}>ul>li{Nested content $}*4^^^li{Item 2} -->
+  <ul>
+    <li>Item 1
+      <ul>
+        <li>Inner sub Item 1</li>
+        <li>Inner sub Item 2</li>
+        <li>Inner sub Item 3
+          <ul>
+            <li>Nested content 1</li>
+            <li>Nested content 2</li>
+            <li>Nested content 3</li>
+            <li>Nested content 4</li>
+          </ul>
+        </li>
+      </ul>
+      <li>Item 2</li>
+    </li>
+  </ul>
+
+
+</body>
+</html>
