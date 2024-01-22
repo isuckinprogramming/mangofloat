@@ -1,0 +1,4 @@
+
+# Ignore the zip files because the files for an activity will be
+# converted to a zip file for easier grading later.
+*.zip
